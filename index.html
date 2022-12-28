@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./buttons.css">
+</head>
+
+<body>
+    <!-- <div id="launchpad"> -->
+    <!-- <img id="pad" src="./images/131-1319663_launchpad-cartoon-rocket-launch-pad.png" alt=""> -->
+    <div id="launcher">
+        <img id="rocket" src="./images/shuttle-boosters-colour.svg" alt="">
+        <div id="fcontainer">
+            <img class="fire" id="fleft" src="./images/animated-fire-image-0377.gif" alt="">
+            <img class="fire" id="firemiddle" src="./images/animated-fire-image-0301.gif" alt="">
+            <img class="fire" id="fright" src="./images/animated-fire-image-0377.gif" alt="">
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <div class="control">
+        <button id="l">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Launch!
+            </span></button>
+        <button onclick="reset();">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front text"> Abort!
+            </span></button>
+        <h2 id="show_counter"></h2>
+    </div>
+    <video src="./vid/dec.mp4"></video>
+    <audio src="./sound/Missile.mp3" hidden></audio>
+    <!--  -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
