@@ -11,11 +11,12 @@ var mybox = document.getElementById("show_counter");
 loadEventListener();
 // loads every events in app
 function loadEventListener() {
-  launch.addEventListener("click", () => {
+  launch.addEventListener("pointerup", () => {
     MyTimer = setInterval(counter, 1000, setTimeout(launching, 11000));
     video.style.display = "initial";
     mybox.style.display = "initial";
     video.play();
+    launch.style.display = 'none';
   });
 }
 //
@@ -37,6 +38,7 @@ function reset() {
   launcher.style.bottom = "-100px";
   launcher.style.transitionDuration = "1s";
   fire.style.display = "none";
+  launch.style.display = 'initial';
 }
 //
 //
